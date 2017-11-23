@@ -11,6 +11,15 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    //这里可以定义修改Controller的默认命名空间-MACK
+    'controllerNamespace' => 'app\controllers',
+
+    //该属性允许你指定一个控制器ID到任意控制器类-MACK
+    'controllerMap'=>[  
+        'api'=>[  
+            'class'=>'app\controllers\HelloController'  
+        ]
+    ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation

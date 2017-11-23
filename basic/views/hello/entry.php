@@ -4,7 +4,7 @@ use yii\widgets\ActiveForm;
 ?>
 <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'name') ?>
+    <?= $form->field($model, 'name')->label("姓名")?>
 
     <?= $form->field($model, 'email') ?>
 
